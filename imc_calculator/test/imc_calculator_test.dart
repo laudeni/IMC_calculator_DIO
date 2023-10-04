@@ -1,8 +1,8 @@
-import 'package:imc_calculator/imc_calculator.dart';
+import 'package:imc_calculator/classes/pessoa.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
+  test('imc', () {
+    expect(Pessoa().resultadoIMC(50, 1.9), '13.850415512465375');
   });
 }

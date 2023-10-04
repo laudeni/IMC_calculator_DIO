@@ -38,4 +38,12 @@ class ConsoleUtils {
       }
     } while (true);
   }
+
+  static void clearScreen() {
+    if (Platform.isWindows) {
+      Process.run('cmd.exe', ['/c', 'cls']);
+    } else {
+      Process.run('clear', []);
+    }
+  }
 }
